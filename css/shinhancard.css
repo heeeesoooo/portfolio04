@@ -1,0 +1,78 @@
+.pop_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup figure img {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.popup button {
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ------------ header ------------ */
+.header {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------------ header_top ------------ */
+.header_top .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top .inner ul {
+    display: flex;
+}
+
+.header_top .inner ul li {
+    font-size: 14px;
+    line-height: 50px;
+    color: #494f60;
+}
+
+.header_top .inner ul li~li::before {
+    content: '';
+    margin: 0 10px;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #494f60;
+}
+
+/* ------------ header_body ------------ */
+.header_body .inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header_body .inner ul {
+    display: flex;
+}
+
+.header_body .inner img {
+    width: 100%;
+}
