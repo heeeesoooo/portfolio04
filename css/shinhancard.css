@@ -5,6 +5,7 @@
     right: 0;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 .popup {
@@ -66,13 +67,130 @@
 .header_body .inner {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    line-height: 80px;
+    color: #000;
 }
 
 .header_body .inner ul {
     display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header_body .inner .right {
+    font-size: 30px;
 }
 
 .header_body .inner img {
-    width: 100%;
+    width: 160px;
 }
+
+/* ------------ mainIntro ------------ */
+.mainIntro {
+    position: relative;
+    background: url(../img/main_bg_pc.png) center center/cover;
+    height: 40vh;
+}
+
+.mainIntro .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.searchWrap {
+    padding: 60px 250px;
+}
+
+.mainIntro .search_box {
+    position: relative;
+    border: 2px solid #486eff;
+    border-radius: 10px;
+    height: 60px;
+    background: #fff;
+}
+
+.mainIntro .search_box i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+
+    font-size: 30px;
+    color: #486eff;
+}
+
+.main_slide {
+    position: relative;
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 1px 1px 13px 0px #ddd;
+    border-radius: 10px;
+}
+
+.main_slide .icon_box {}
+
+.main_slide .icon_box figure p {
+    text-align: center;
+    color: #000;
+}
+
+.main_slide .icon_box figure {}
+
+.main_slide .icon_box figure img {
+    margin: 0 auto 20px auto;
+    width: 50px;
+}
+
+.icon_box .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.icon_box .slick-dots>li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.icon_box .slick-dots>li.slick-active {
+    width: 20px;
+    height: 8px;
+    background: #444;
+    border-radius: 8px;
+}
+
+.icon_box .slick-dots>li button {
+    display: none;
+}
+
+.main_slide .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+}
+
+.main_slide .arrows .prev {
+    background: url(../img/arrow_left.png) center center/cover;
+    margin: 0 0 0 -600px;
+}
+
+.main_slide .arrows .next {
+    background: url(../img/arrow_right.png) center center/cover;
+    margin: 0 0 0 600px;
+}
+
+/* 
+* {
+    outline: 1px solid tomato;
+} */
