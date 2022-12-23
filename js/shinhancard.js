@@ -19,6 +19,19 @@ $(function () {
         $('.icon_box').slick('slickNext')
     })
 
+    $('.event_slide').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 3,
+    })
+    $('.eventBanner .arrows .prev').on('click', function () {
+        $('.event_slide').slick('slickPrev')
+    })
+
+    $('.eventBanner .arrows .next').on('click', function () {
+        $('.event_slide').slick('slickNext')
+    })
+
 
 
 })
